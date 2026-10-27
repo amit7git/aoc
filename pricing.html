@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing – ALEXA Online Classes</title>
+<meta name="description" content="Simple, transparent pricing for ALEXA Online Classes: free weekend classes and Prime classes paid per class after you attend.">
+<link rel="canonical" href="https://alexaonlineclasses.vercel.app/pricing.html">
+<meta property="og:site_name" content="ALEXA Online Classes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pricing – ALEXA Online Classes">
+<meta property="og:description" content="Simple, transparent pricing for ALEXA Online Classes: free weekend classes and Prime classes paid per class after you attend.">
+<meta property="og:url" content="https://alexaonlineclasses.vercel.app/pricing.html">
+<meta property="og:image" content="https://alexaonlineclasses.vercel.app/assets/uploads/2025/08/front-2025-5.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#482F78">
+<link rel="icon" href="assets/uploads/2024/06/android-chrome-512x512-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+  :root{--pg-violet:#482F78;--pg-violet-dark:#3A2560;--pg-violet-text:#5A537A;--pg-violet-light:#F3F1F7;--pg-violet-border:#EAE7F0;--pg-gold:#F5C542;--pg-gold-text:#A8730F;--pg-ink:#1A1A2E;--pg-muted:#6B6480;--pg-paper:#FAFAFC;--pg-radius:14px;--pg-shadow:0 4px 16px rgba(72,47,120,.06);--pg-shadow-hover:0 10px 30px rgba(72,47,120,.12)}
+  body.page-pricing{background:var(--pg-paper)}
+  .courses-page-container{max-width:1200px;margin:0 auto;text-align:center}
+  .pg-pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  .pg-pill{padding:10px 22px;border-radius:999px;font-size:.95rem;font-weight:500}
+  .pg-pill-prime{background:var(--pg-gold);color:var(--pg-ink);font-weight:600}
+  .pg-pill-free{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.36)}
+  .pg-wrap{max-width:1100px;margin:0 auto}
+  .pg-sec{padding:64px 20px}
+  .pg-sec-alt{background:var(--pg-violet-light)}
+  .pg-title{font-family:'Poppins',sans-serif;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;color:var(--pg-violet);text-align:center;margin:0 0 12px;text-wrap:balance}
+  .pg-lede{font-size:1rem;color:var(--pg-violet-text);text-align:center;max-width:640px;margin:0 auto 40px;line-height:1.6}
+  .pg-plans{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin:0 auto}
+  .pg-plan{display:flex;flex-direction:column;align-items:center;padding:32px;background:#fff;border:1px solid var(--pg-violet-border);border-radius:var(--pg-radius);box-shadow:var(--pg-shadow);transition:transform .25s,box-shadow .25s}
+  .pg-plan:hover{transform:translateY(-3px);box-shadow:var(--pg-shadow-hover)}
+  .pg-plan-prime{border-color:var(--pg-gold);border-width:2px}
+  .pg-plan h3{font-family:'Poppins',sans-serif;font-size:1.25rem;font-weight:600;color:var(--pg-violet);margin:0 0 6px}
+  .pg-price{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:700;color:var(--pg-ink);line-height:1.2;margin:0 0 24px}
+  .pg-price small{display:block;font-size:.85rem;font-weight:400;color:var(--pg-muted);margin-top:6px}
+  .pg-plan ul{list-style:none;padding:0;margin:0 0 28px;flex:1;display:flex;flex-direction:column;gap:12px}
+  .pg-plan li{display:flex;align-items:flex-start;gap:10px;font-size:.95rem;line-height:1.5;color:var(--pg-violet-text)}
+  .pg-plan li svg{flex-shrink:0;width:16px;height:16px;margin-top:3px;color:var(--pg-violet)}
+  .pg-plan-prime li svg{color:var(--pg-gold-text)}
+  .pg-plan .btn{display:inline-flex;align-items:center;justify-content:center;margin-top:auto;text-align:center}
+  .pg-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;background:#fff;border:1px solid var(--pg-violet-border);border-radius:var(--pg-radius);box-shadow:var(--pg-shadow)}
+  .pg-fee,.pg-cmp{width:100%;min-width:560px;border-collapse:collapse}
+  .pg-fee th,.pg-cmp th,.pg-fee td,.pg-cmp td{padding:14px 18px;text-align:left;vertical-align:middle;font-size:.95rem;border-bottom:1px solid var(--pg-violet-border)}
+  .pg-fee thead th,.pg-cmp thead th{background:var(--pg-violet-light);font-family:'Poppins',sans-serif;font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--pg-violet)}
+  .pg-fee tbody tr:last-child th,.pg-fee tbody tr:last-child td,.pg-cmp tbody tr:last-child th,.pg-cmp tbody tr:last-child td{border-bottom:none}
+  .pg-fee tbody tr:nth-child(even),.pg-cmp tbody tr:nth-child(even){background:var(--pg-paper)}
+  .pg-fee tbody tr{transition:background .2s}
+  .pg-fee tbody tr:hover{background:#F7F4FB}
+  .pg-fee tbody tr:nth-child(even):hover{background:#F8F5FF}
+  .pg-fee th[scope=row]{background:var(--pg-violet);position:relative;color:#fff !important}
+  .pg-fee th[scope=row]::before{display:none}
+  .pg-fee th[scope=row] a{color:#fff !important;text-decoration:none}
+  .pg-fee th[scope=row] a:hover{color:#fff !important;text-decoration:none;background:none !important}
+  .pg-fee thead th:nth-child(2), .pg-fee thead th:nth-child(3){text-align:center}
+  .pg-fee td:nth-child(2), .pg-fee td:nth-child(3){text-align:center}
+  .pg-fee th[scope=row],.pg-cmp th[scope=row]{font-weight:600;color:var(--pg-ink)}
+  .pg-fee th[scope=row] a{color:var(--pg-gold-text);text-decoration:none;transition:color .2s}
+  .pg-fee th[scope=row] a:hover{color:var(--pg-violet);text-decoration:underline}
+  .pg-fee td.num{text-align:center;font-weight:500;color:var(--pg-ink)}
+  .pg-cmp thead th:nth-child(2){background:var(--pg-gold);color:var(--pg-ink)}
+  .pg-cmp thead th:nth-child(3){background:var(--pg-violet);color:#fff}
+  .pg-cmp td{color:var(--pg-violet-text)}
+  .pg-cmp .yes,.pg-cmp .no{display:flex;align-items:flex-start;gap:8px}
+  .pg-cmp .yes svg,.pg-cmp .no svg{flex-shrink:0;width:14px;height:14px;margin-top:3px}
+  .pg-cmp .yes svg{color:#2E9E6B}.pg-cmp .no svg{color:#C44536}
+  .pg-payg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1000px;margin:0 auto}
+  .pg-payg-item{padding:28px 22px;text-align:center;background:#fff;border:1px solid var(--pg-violet-border);border-radius:var(--pg-radius);box-shadow:var(--pg-shadow);transition:transform .25s,box-shadow .25s}
+  .pg-payg-item:hover{transform:translateY(-4px);box-shadow:var(--pg-shadow-hover)}
+  .pg-payg-item .pg-icon{font-size:32px;color:var(--pg-violet);margin-bottom:14px;line-height:1}
+  .pg-payg-item h3{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:600;color:var(--pg-violet);margin:0 0 8px}
+  .pg-payg-item p{margin:0;font-size:.9rem;line-height:1.5;color:var(--pg-violet-text)}
+  .pg-terms{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+  .pg-terms details{background:#fff;border:1px solid var(--pg-violet-border);border-radius:10px;overflow:hidden;transition:box-shadow .2s}
+  .pg-terms details[open]{box-shadow:var(--pg-shadow)}
+  .pg-terms summary{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-size:1rem;font-weight:600;color:var(--pg-violet);cursor:pointer;list-style:none}
+  .pg-terms summary::-webkit-details-marker{display:none}
+  .pg-terms summary::after{content:"+";font-size:1.4rem;font-weight:400;line-height:1;color:var(--pg-violet);transition:transform .2s}
+  .pg-terms details[open] summary::after{content:"−"}
+  .pg-terms summary:hover{background:var(--pg-violet-light)}
+  .pg-terms details>p{margin:0;padding:0 20px 18px;font-size:.95rem;line-height:1.7;color:var(--pg-violet-text)}
+  .pg-terms details>p a{color:var(--pg-violet);font-weight:600}
+  @media(max-width:900px){.pg-plans{grid-template-columns:1fr}.pg-payg{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.pg-sec{padding:48px 16px}.pg-payg{grid-template-columns:1fr}.pg-fee-container{overflow:visible;border:none;border-radius:0;box-shadow:none;background:transparent}.pg-fee{min-width:0}.pg-fee thead{display:none}.pg-fee tbody,.pg-fee tr,.pg-fee th,.pg-fee td{display:block;width:100%}.pg-fee tbody tr{padding:16px 18px;margin-bottom:12px;background:#fff;border:1px solid var(--pg-violet-border);border-radius:10px;box-shadow:var(--pg-shadow)}.pg-fee tbody tr:nth-child(even){background:#fff}.pg-fee th[scope=row]{padding:0 0 10px;margin-bottom:10px;border-bottom:1px solid var(--pg-violet-border);font-size:1.05rem;color:var(--pg-violet)}.pg-fee td,.pg-fee td.num{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border:none;text-align:right}.pg-fee td::before{content:attr(data-label);font-size:.85rem;font-weight:600;color:var(--pg-muted);text-align:left}.pg-table-wrap.pg-cmp-container{box-shadow:var(--pg-shadow)}}
+</style>
+</head>
+<body class="page-pricing">
+<a class="skip-link" href="#content">Skip to main content</a>
+<header class="site-header" id="site-header"><div class="hd">
+  <a class="logo" href="index.html" aria-label="ALEXA Online Classes, home"><img src="assets/brand/logo.png" alt="ALEXA Online Classes" width="186" height="59"></a>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="free-class.html">Free Class</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="blog.html">Blog</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact-us.html">Contact Us</a>
+    <a class="btn-join login-link" href="tracker.html">Login</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+</div></header>
+
+
+<main id="content">
+  <section class="courses-page-section courses-header-section">
+    <div class="courses-page-container">
+      <h1 class="courses-page-main-title">Simple, transparent pricing</h1>
+      <p class="courses-page-subtitle">Choose between Free Weekend Classes or Prime Classes (paid per class after you attend).</p>
+      
+    </div>
+  </section>
+
+  <section class="pg-sec">
+    <div class="pg-wrap">
+      <h2 class="pg-title">Choose how you want to learn</h2>
+      <p class="pg-lede">Learn free on weekends, or take Prime classes and pay per class only after you attend.</p>
+      <div class="pg-plans">
+        <article class="pg-plan">
+          <h3>Free weekend classes</h3>
+          <p class="pg-price">Free <small>Completely free of cost</small></p>
+          <ul>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Weekly classes for a flexible, relaxed schedule</span></li>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Open to registered learners</span></li>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>General doubt sessions during class time</span></li>
+          </ul>
+          <a class="btn btn-outline" href="free-class.html" style="align-self:center;display:flex;align-items:center;justify-content:center">Join a free class</a>
+        </article>
+        <article class="pg-plan pg-plan-prime">
+          <h3>Prime classes</h3>
+          <p class="pg-price">Pay per class <small>Payment is collected only after you attend</small></p>
+          <ul>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>A permanent Google Meet class link</span></li>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Personalised learning plans tailored to your goals</span></li>
+            <li><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Class notes, assignments and 1-on-1 doubt sessions</span></li>
+          </ul>
+          <a class="btn btn-demo prime-demo-btn" style="background:var(--orange);border-color:var(--orange);color:#fff" href="demo.html" style="align-self:center;display:flex;align-items:center;justify-content:center">Book a free demo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-sec pg-sec-alt" id="fees">
+    <div class="pg-wrap">
+      <h2 class="pg-title">Prime class fees</h2>
+      <p class="pg-lede">Price per class. Group classes are for up to three learners.</p>
+      <div class="pg-table-wrap pg-fee-container">
+        <table class="pg-fee">
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Personal (per class)</th>
+              <th scope="col">Group (per class)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><a href="english-grammar.html">English Grammar</a></th><td class="num" data-label="Personal (1-on-1)">₹ 200</td><td class="num" data-label="Group">₹ 100</td></tr>
+            <tr><th scope="row"><a href="spoken-english.html">Spoken English</a></th><td class="num" data-label="Personal (1-on-1)">₹ 300</td><td class="num" data-label="Group">₹ 150</td></tr>
+            <tr><th scope="row"><a href="vocabulary.html">Vocabulary</a></th><td class="num" data-label="Personal (1-on-1)">₹ 99</td><td class="num" data-label="Group">₹ 49</td></tr>
+            <tr><th scope="row"><a href="prime-quick-rehearsal-session.html">Prime Quick Rehearsal Session (PQRS)</a></th><td class="num" data-label="Personal (1-on-1)">₹ 100</td><td class="num" data-label="Group">₹ 50</td></tr>
+            <tr><th scope="row"><a href="job-interview-cracker.html">Job Interview Cracker</a></th><td class="num" data-label="Personal (1-on-1)">₹ 300</td><td class="num" data-label="Group">₹ 150</td></tr>
+            <tr><th scope="row"><a href="english-for-general-knowledge.html">English for General Knowledge</a></th><td class="num" data-label="Personal (1-on-1)">₹ 200</td><td class="num" data-label="Group">₹ 100</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-sec">
+    <div class="pg-wrap">
+      <h2 class="pg-title">Prime and free classes compared</h2>
+      <p class="pg-lede">What is included in each plan. Scroll sideways on small screens to see every column.</p>
+      <div class="pg-table-wrap pg-cmp-container" role="region" aria-label="Prime and free class feature comparison" tabindex="0">
+        <table class="pg-cmp">
+          <thead><tr><th scope="col">Feature</th><th scope="col">Prime plan</th><th scope="col">Free weekend plan</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Class booking</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Effortless access with a permanent Google Meet class link.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>Must book each class separately.</span></span></td></tr>
+            <tr><th scope="row">Course plan</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Personalised learning plans tailored to your goals.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>No personalised learning plans.</span></span></td></tr>
+            <tr><th scope="row">Class frequency</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Regular classes for consistent, faster progress.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>Weekly classes for a flexible, relaxed schedule.</span></span></td></tr>
+            <tr><th scope="row">Class notes</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Comprehensive class notes provided after every session.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>No class notes provided.</span></span></td></tr>
+            <tr><th scope="row">Assignments</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Regular, practical assignments to reinforce learning.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>No assignments.</span></span></td></tr>
+            <tr><th scope="row">Doubt sessions</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>1-on-1 doubt-clearing sessions for focused support.</span></span></td><td data-label="Free weekend"><span class="no"><svg viewBox="0 0 352 512" aria-hidden="true"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg><span>General doubt sessions during class time only.</span></span></td></tr>
+            <tr><th scope="row">Payment</th><td data-label="Prime"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Pay-per-class convenience, only after you attend.</span></span></td><td data-label="Free weekend"><span class="yes"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg><span>Completely free of cost.</span></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-sec pg-sec-alt">
+    <div class="pg-wrap">
+      <h2 class="pg-title">Pay as you go, learn at your own pace</h2>
+      <p class="pg-lede">There is no large upfront payment with Prime classes.</p>
+      <div class="pg-payg">
+        <div class="pg-payg-item"><div class="pg-icon"><i class="fa-solid fa-handshake-simple" aria-hidden="true"></i></div><h3>No long-term commitment</h3><p>Pause or stop your learning journey anytime you need to.</p></div>
+        <div class="pg-payg-item"><div class="pg-icon"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i></div><h3>Flexible schedule</h3><p>Learn when it is most convenient for you, stress-free.</p></div>
+        <div class="pg-payg-item"><div class="pg-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div><h3>Try it risk-free</h3><p>Experience our classes without a large upfront commitment.</p></div>
+        <div class="pg-payg-item"><div class="pg-icon"><i class="fa-regular fa-credit-card" aria-hidden="true"></i></div><h3>Pay as you go</h3><p>You only pay for each class after you take it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pg-sec">
+    <div class="pg-wrap">
+      <h2 class="pg-title">Terms and conditions for Prime classes</h2>
+      <p class="pg-lede">Please read these before you book.</p>
+      <div class="pg-terms">
+        <details><summary>Enrollment and payment</summary><p>Registration is completed on the website. Payment for Prime classes is collected only after the class has been attended.</p></details>
+        <details><summary>Attendance and cancellation</summary><p>To avoid being charged, please cancel your scheduled class at least 2 hours before the start time.</p></details>
+        <details><summary>Rescheduling</summary><p>You may reschedule your class up to 2 hours in advance. New session slots are subject to availability.</p></details>
+        <details><summary>Refund policy</summary><p>As we operate on a post-payment basis, no refunds are issued for classes that have already been attended.</p></details>
+        <details><summary>Schedule availability</summary><p>Class schedules are subject to change. We will notify you in advance of any adjustments.</p></details>
+        <details><summary>Code of conduct</summary><p>Respect for mentors and fellow students is mandatory. Disruptive or disrespectful behaviour may result in suspension from classes.</p></details>
+        <details><summary>Account security</summary><p>You are responsible for maintaining the confidentiality of your account and login credentials.</p></details>
+        <details><summary>Policy updates</summary><p>We may update these policies from time to time. You will be notified via email and on the platform of any significant changes.</p></details>
+        <details><summary>Support</summary><p>For any issues or queries, please contact our support team at <a href="mailto:alexaonlineclasses@gmail.com">alexaonlineclasses@gmail.com</a>.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="ft-wrap">
+  <div class="ft-top">
+    <div class="ft-brand">
+      <img src="assets/brand/logo-footer.png" alt="ALEXA Online Classes" width="186" height="59">
+      <p class="ft-tagline"><span style="font-weight:400;font-size:0.78rem">Smart Learning. Confident Speaking.</span></p>
+      <a class="ft-cta" href="demo.html" style="align-self:center">Book a free demo</a>
+    </div>
+    <nav class="ft-col" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul><li><a href="courses.html">Courses</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="tracker.html">Student Tracker</a></li></ul>
+    </nav>
+    <nav class="ft-col" aria-label="Learn">
+      <h4>Learn</h4>
+      <ul><li><a href="resources.html">Resources</a></li><li><a href="quiz.html">Quiz</a></li><li><a href="blog.html">Blog</a></li></ul>
+    </nav>
+    <div class="ft-col ft-contact-col">
+      <h4>Contact</h4>
+      <ul class="ft-contact-list">
+        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:alexaonlineclasses@gmail.com">alexaonlineclasses@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+918762340231">+91 876 234 0231</a></li>
+      </ul>
+      <p class="ft-hours">Support hours<br>11:00 AM &ndash; 8:00 PM IST</p>
+      <nav class="soc ft-soc" aria-label="Social media"><a href="https://t.me/englishwithammy" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a><a href="https://wa.me/+918762340231" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a><a href="https://www.instagram.com/alexa_online_classes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/@ALEXAOnlineClasses" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a><a href="https://maps.app.goo.gl/qSEJHYELLK6RJmDy9" target="_blank" rel="noopener" aria-label="Google reviews"><i class="fab fa-google" aria-hidden="true"></i></a></nav>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copyright">&copy; 2026 ALEXA Online Classes. All rights reserved.</p>
+    <p class="ft-credit" style="color:#E8E3EF"><span style="font-weight:400"><span style="font-weight:400">Designed by Amitosphere Technology</span></span></p>
+    <nav class="ft-legal" aria-label="Legal"><a href="terms-conditions.html">Terms &amp; Conditions</a><span aria-hidden="true">|</span><a href="privacy-policy.html">Privacy Policy</a><span aria-hidden="true">|</span><a href="disclaimer.html">Disclaimer</a></nav>
+  </div>
+</div></footer>
+
+<script src="assets/site.js" defer></script>
+<a class="wa-float" href="https://wa.me/+918762340231?text=Hi%20ALEXA%2C%20I%20would%20like%20to%20know%20more%20about%20your%20English%20classes." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path transform="translate(5.3 5.3) scale(.56)" fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>Chat with us</span></a>
+</body>
+</html>

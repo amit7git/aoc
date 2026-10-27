@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us – ALEXA Online Classes</title>
+<meta name="description" content="We&#x27;re here to help and answer any question you might have. We look forward to hearing from you.">
+<link rel="canonical" href="https://alexaonlineclasses.vercel.app/contact-us.html">
+<meta property="og:site_name" content="ALEXA Online Classes"><meta property="og:type" content="website"><meta property="og:title" content="Contact Us – ALEXA Online Classes"><meta property="og:description" content="We&#x27;re here to help and answer any question you might have. We look forward to hearing from you."><meta property="og:url" content="https://alexaonlineclasses.vercel.app/contact-us.html"><meta property="og:image" content="https://alexaonlineclasses.vercel.app/assets/uploads/2025/08/front-2025-5.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#482F78">
+<link rel="icon" href="assets/uploads/2024/06/android-chrome-512x512-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/theme.css">
+
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to main content</a>
+<header class="site-header" id="site-header"><div class="hd">
+  <a class="logo" href="index.html" aria-label="ALEXA Online Classes, home"><img src="assets/brand/logo.png" alt="ALEXA Online Classes" width="186" height="59"></a>
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="free-class.html">Free Class</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="blog.html">Blog</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact-us.html">Contact Us</a>
+    <a class="btn-join login-link" href="tracker.html">Login</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+</div></header>
+
+
+<main id="content">
+<style>
+/* --- General & Body Styles --- */
+.contact-page-section {
+    padding: 60px 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.contact-page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Hero Section --- */
+.contact-hero-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--violet-900), var(--violet));
+    text-align: center;
+    color: #fff;
+}
+.contact-hero-section::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(380px, 50vw);
+    aspect-ratio: 1;
+    background: url(assets/brand/bird-white.png) no-repeat center/contain;
+    opacity: .07;
+    pointer-events: none;
+}
+.contact-page-container { position: relative; z-index: 1; }
+.contact-page-main-title {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(2.15rem, 5vw, 48px);
+    color: #fff;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+.contact-page-subtitle {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    color: #E4DBF5;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --- Main Content Section --- */
+.contact-main-section {
+    background-color: #ffffff;
+}
+.contact-two-column {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: clamp(32px, 5vw, 60px);
+    align-items: start;
+}
+.contact-info-column h2 {
+    font-size: 32px;
+    color: #1f2937;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.contact-info-column p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.contact-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-details-list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-icon {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    font-size: 1.08rem;
+    line-height: 1;
+}
+.contact-icon-email { background: var(--violet-100); color: var(--violet); }
+.contact-icon-phone { background: #E7F5F2; color: #0B6253; }
+.contact-icon-hours { background: #FFF4DC; color: var(--gold-text); }
+.contact-details-list div { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
+.contact-details-list strong { font-size: 18px; font-weight: 600; color: #111827; }
+.contact-details-list div > span { font-size: 16px; color: #4b5563; }
+
+/* --- Contact Form --- */
+.contact-form-column .alexa-form-wrap {
+    max-width: none;
+    padding: 0;
+}
+.contact-form-heading {
+    font-size: 28px;
+    color: var(--violet);
+    margin: 0 0 6px;
+}
+.contact-form-copy {
+    font-size: 15px;
+    color: #4b5563;
+    margin: 0 0 20px;
+}
+.contact-details-list a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-details-list a:hover {
+    color: var(--violet);
+    text-decoration: underline;
+}
+
+/* --- Social Icons Section --- */
+.social-connect-section { margin-top: 40px; }
+.social-connect-section h3 { font-size: 22px; color: #1f2937; margin-bottom: 20px; }
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    font-size: 1.55rem;
+    flex-wrap: wrap;
+}
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #eaf2fc;
+    color: var(--violet);
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.17s, transform 0.14s, color 0.2s;
+}
+.social-icons a:hover, .social-icons a:focus-visible { transform: scale(1.15); outline: none; box-shadow: 0 0 0 3px rgba(72,47,120,.3); }
+.social-icons a[aria-label*="Telegram"]:hover, .social-icons a[aria-label*="Telegram"]:focus-visible { background: #229ED9; color: #fff; }
+.social-icons a[aria-label*="WhatsApp"]:hover, .social-icons a[aria-label*="WhatsApp"]:focus-visible { background: #25D366; color: #fff; }
+.social-icons a[aria-label*="Instagram"]:hover, .social-icons a[aria-label*="Instagram"]:focus-visible { background: #E4405F; color: #fff; }
+.social-icons a[aria-label*="YouTube"]:hover, .social-icons a[aria-label*="YouTube"]:focus-visible { background: #FF0000; color: #fff; }
+.social-icons a[aria-label*="Google"]:hover, .social-icons a[aria-label*="Google"]:focus-visible { background: #4285F4; color: #fff; }
+
+/* --- Responsive Styles --- */
+@media (max-width: 992px) {
+    .contact-two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-page-main-title { font-size: clamp(2rem, 9vw, 38px); }
+    .contact-info-column h2 { font-size: 28px; }
+}
+</style>
+
+<!-- Block 1: Hero Section -->
+<div class="contact-page-section contact-hero-section">
+    <div class="contact-page-container">
+        <h1 class="contact-page-main-title">Get in Touch</h1>
+        <p class="contact-page-subtitle">
+            We're here to help and answer any question you might have. We look forward to hearing from you.
+        </p>
+    </div>
+</div>
+
+<!-- Block 2: Main Contact Content -->
+<div class="contact-page-section contact-main-section">
+    <div class="contact-page-container contact-two-column">
+        
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info-column">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out to us through any of the following methods. We are eager to assist you on your learning journey.</p>
+            <ul class="contact-details-list">
+                <li>
+                    <span class="contact-icon contact-icon-email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>Email Us</strong>
+                        <span><a href="mailto:alexaonlineclasses@gmail.com">alexaonlineclasses@gmail.com</a></span>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact-icon contact-icon-phone"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>Call Us</strong>
+                        <span><a href="tel:+918762340231">+91 876 234 0231</a></span>
+                    </div>
+                </li>
+                <li>
+                    <span class="contact-icon contact-icon-hours"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+                    <div>
+                        <strong>Business Hours</strong>
+                        <span>11:00 AM – 8:00 PM</span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Social Icons Section -->
+            <div class="social-connect-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://t.me/englishwithammy" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/+918762340231" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/alexa_online_classes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ALEXAOnlineClasses" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://maps.app.goo.gl/qSEJHYELLK6RJmDy9" target="_blank" rel="noopener" aria-label="Google Reviews"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Contact form -->
+        <div class="contact-form-column">
+            <div class="alexa-form-wrap">
+                <form class="alexa-form" data-subject="New message from the website contact form" aria-labelledby="contact-form-heading" novalidate>
+                    <h2 class="contact-form-heading" id="contact-form-heading">Send us a message</h2>
+                    <p class="contact-form-copy">Tell us what you would like to learn and we will get back to you.</p>
+                    <div class="grid">
+                        <label>Your name<input type="text" name="Name" required autocomplete="name"></label>
+                        <label>Email address<input type="email" name="Email" required autocomplete="email"></label>
+                        <label>Phone / WhatsApp number<input type="tel" name="Phone / WhatsApp" required autocomplete="tel" inputmode="tel"></label>
+                        <label class="wide">Message<textarea name="Message" rows="4" required></textarea></label>
+                    </div>
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                    <button type="submit" class="alexa-form-btn">Send Message</button>
+                    <p class="alexa-form-msg" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</main>
+<footer class="site-footer"><div class="ft-wrap">
+  <div class="ft-top">
+    <div class="ft-brand">
+      <img src="assets/brand/logo-footer.png" alt="ALEXA Online Classes" width="186" height="59">
+      <p class="ft-tagline"><span style="font-weight:400;font-size:0.78rem">Smart Learning. Confident Speaking.</span></p>
+      <a class="ft-cta" href="demo.html">Book a free demo</a>
+    </div>
+    <nav class="ft-col" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <ul><li><a href="courses.html">Courses</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="tracker.html">Student Tracker</a></li></ul>
+    </nav>
+    <nav class="ft-col" aria-label="Learn">
+      <h4>Learn</h4>
+      <ul><li><a href="resources.html">Resources</a></li><li><a href="quiz.html">Quiz</a></li><li><a href="blog.html">Blog</a></li></ul>
+    </nav>
+    <div class="ft-col ft-contact-col">
+      <h4>Contact</h4>
+      <ul class="ft-contact-list">
+        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:alexaonlineclasses@gmail.com">alexaonlineclasses@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+918762340231">+91 876 234 0231</a></li>
+      </ul>
+      <p class="ft-hours">Support hours<br>11:00 AM &ndash; 8:00 PM IST</p>
+      <nav class="soc ft-soc" aria-label="Social media"><a href="https://t.me/englishwithammy" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a><a href="https://wa.me/+918762340231" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a><a href="https://www.instagram.com/alexa_online_classes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/@ALEXAOnlineClasses" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a><a href="https://maps.app.goo.gl/qSEJHYELLK6RJmDy9" target="_blank" rel="noopener" aria-label="Google reviews"><i class="fab fa-google" aria-hidden="true"></i></a></nav>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copyright">&copy; 2026 ALEXA Online Classes. All rights reserved.</p>
+    <p class="ft-credit" style="color:#E8E3EF"><span style="font-weight:400"><span style="font-weight:400">Designed by Amitosphere Technology</span></span></p>
+    <nav class="ft-legal" aria-label="Legal"><a href="terms-conditions.html">Terms &amp; Conditions</a><span aria-hidden="true">|</span><a href="privacy-policy.html">Privacy Policy</a><span aria-hidden="true">|</span><a href="disclaimer.html">Disclaimer</a></nav>
+  </div>
+</div></footer>
+<script src="assets/site.js" defer></script>
+<a class="wa-float" href="https://wa.me/+918762340231?text=Hi%20ALEXA%2C%20I%20would%20like%20to%20know%20more%20about%20your%20English%20classes." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path transform="translate(5.3 5.3) scale(.56)" fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>Chat with us</span></a>
+</body>
+</html>
